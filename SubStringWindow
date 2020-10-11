@@ -1,0 +1,9 @@
+a='haboohaboo'
+b='boo'
+c=[a[i:i+len(b)] for i in range(len(a)-len(b)+1)]
+print(c)
+subIndex=[i for i in range(len(c)) if c[i] == b] 
+print(subIndex)
+
+d=[a[i : len(b) + i] for i in range(len(a) - len(b) + 1) if  a[i : len(b) + i]  == b]   #shortest virsion of above code
+print(d)
